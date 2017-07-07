@@ -1,0 +1,1 @@
+{Person [name=qwe, age=12, gender=MALE]=[Pet [name=asd, age=2, species=cat]]}
