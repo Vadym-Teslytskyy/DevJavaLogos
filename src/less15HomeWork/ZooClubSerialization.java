@@ -97,7 +97,7 @@ public class ZooClubSerialization implements Serializable{
 				new ObjectInputStream(
 						new FileInputStream(
 								new File("ZooClub.save")))){
-				ZooClub zooClub = (ZooClub) ois.readObject();
+				   zooClub = (ZooClub) ois.readObject();
 				System.out.println(zooClub);
 		}catch (IOException | ClassNotFoundException e) {
 				e.printStackTrace();

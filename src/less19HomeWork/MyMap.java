@@ -28,7 +28,12 @@ public class MyMap<K,V> {
 	}
 	
 	public void addToMap(K key,V value) {
-		mySet.add(new MyEntry<K,V>(key, value));
+		MyEntry<K, V> mEntry = new MyEntry<K,V>(key, value);
+		for (MyEntry<K, V> entry : mySet) {
+			if (entry.equals(mEntry)) {
+				mySet.add(mEntry);
+			}
+		}
 	}
 	
 	public void deleteByKey(K key){
