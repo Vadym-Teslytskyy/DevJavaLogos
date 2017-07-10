@@ -13,6 +13,7 @@ public class Main {
 		thread2.start();
 		thread2.join();
 		ExecutorService service = Executors.newFixedThreadPool(2);
+		System.out.println();
 		service.execute(new Task());
 		service.execute(new Task());
 	}
