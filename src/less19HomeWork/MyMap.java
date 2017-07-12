@@ -33,7 +33,11 @@ public class MyMap<K, V> {
 				isInMap = true;
 			}
 		}
-		if(!isInMap) mySet.add(mEntry);
+		if(!isInMap){ 
+				mySet.add(mEntry);
+			}else {
+				System.out.println("Значення з таким ключем вже існує!");
+			}
 	}
 
 	public void deleteByKey(K key) {

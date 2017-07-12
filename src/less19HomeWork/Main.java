@@ -6,6 +6,7 @@ public class Main {
 		
 		MyMap<String, Boolean> myMap = new MyMap<>();
 		myMap.addToMap("1", false);
+		myMap.addToMap("1", true);
 		myMap.addToMap("2", true);
 		myMap.addToMap("3", true);
 		myMap.addToMap("4", false);
