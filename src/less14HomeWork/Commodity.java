@@ -1,7 +1,5 @@
 package less14HomeWork;
 
-import java.util.Locale.Category;
-
 public class Commodity {
 	private String commodityName;
 	private CommodityCategory commodityCategory;
